@@ -3,7 +3,7 @@ const express = require('express')
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const weatherRequest = require('./utils/weatherRequest')
-
+//Declaration
 
 // console.log(__dirname)
 // console.log(path.join(__dirname, '../public'))
