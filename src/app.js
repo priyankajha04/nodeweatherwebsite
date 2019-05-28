@@ -9,6 +9,7 @@ const weatherRequest = require('./utils/weatherRequest')
 // console.log(path.join(__dirname, '../public'))
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //Define path for express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -105,6 +106,6 @@ app.get('*', (req,res) => {
         name: 'Priyanka J'
     })
 })
-app.listen(3000, () => {
-    console.log('Server is running!!')
+app.listen(port, () => {
+    console.log('Server is running on!! '+port)
 })
